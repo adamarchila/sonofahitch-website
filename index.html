@@ -84,7 +84,7 @@
           "name": "When does Son of a Hitch launch?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We're finishing our first production run now. Join the email list and you'll be first to know the moment the caps go live — plus an early-buyer discount."
+            "text": "We're finishing our first production run now. Fill out our short interest form and you'll be first to know the moment the caps go live — plus an early-buyer discount."
           }
         }
       ]
@@ -137,6 +137,7 @@
   .btn:hover{background:var(--blaze-2);transform:translateY(-1px)}
   .btn-ghost{background:transparent;border:1.5px solid var(--line);color:var(--cream)}
   .btn-ghost:hover{border-color:var(--blaze);background:transparent}
+  .btn-lg{position:relative;font-size:15px;padding:17px 36px;border-radius:3px}
   @media(max-width:720px){.navlinks{display:none}}
 
   /* ---------- HERO ---------- */
@@ -213,12 +214,7 @@
   .join-card::before{content:"";position:absolute;inset:0;background:radial-gradient(500px 240px at 50% -10%, rgba(232,83,31,.18), transparent 70%);pointer-events:none}
   .join-card h2{font-size:clamp(32px,5vw,50px);margin-bottom:14px;position:relative}
   .join-card p{color:var(--steel);margin-bottom:28px;position:relative}
-  form.signup{display:flex;gap:10px;max-width:460px;margin:0 auto;position:relative;flex-wrap:wrap}
-  form.signup input{flex:1;min-width:200px;background:var(--char);border:1.5px solid var(--line);color:var(--cream);padding:14px 16px;border-radius:3px;font-size:15px;font-family:inherit}
-  form.signup input:focus{outline:none;border-color:var(--blaze)}
-  form.signup .btn{white-space:nowrap}
   .microcopy{font-size:12.5px;color:var(--steel);margin-top:16px;position:relative}
-  .success{display:none;color:var(--blaze-2);font-weight:600;margin-top:18px;position:relative}
 
   /* Footer */
   footer{border-top:1px solid var(--line);padding:44px 0 40px}
@@ -394,7 +390,7 @@
       </details>
       <details class="faq">
         <summary>When does Son of a Hitch launch? <span class="plus" aria-hidden="true"></span></summary>
-        <div class="ans">We're finishing our first production run right now. Join the email list below and you'll be first to know the moment the caps go live — plus an early-buyer discount for getting in before the crowd.</div>
+        <div class="ans">We're finishing our first production run right now. Fill out the short form below and you'll be first to know the moment the caps go live — plus an early-buyer discount for getting in before the crowd.</div>
       </details>
     </div>
   </div>
@@ -405,14 +401,9 @@
     <div class="join-card">
       <div class="eyebrow" style="position:relative">Be First In Line</div>
       <h2 id="join-h2">Get First Dibs</h2>
-      <p>We're firing up the first production run of hitch caps. Drop your email and you'll be first to know when they go live — plus an early-buyer discount for getting in before the crowd.</p>
-      <form class="signup" onsubmit="return handleSignup(event)">
-        <label for="email" class="sr-only">Email address</label>
-        <input id="email" type="email" name="email" placeholder="you@example.com" required autocomplete="email">
-        <button type="submit" class="btn">Notify Me</button>
-      </form>
-      <div class="microcopy">No spam, no nonsense. Just a heads-up when we launch.</div>
-      <div class="success" id="ok" role="status">You're on the list. Welcome to the family. 🤝</div>
+      <p>Picture one hanging off the back of your rig. Now tell us which one's yours — it takes about a minute, and you'll be first in line when the first production run goes live, plus an early-buyer discount for getting in before the crowd.</p>
+      <a class="btn btn-lg" href="https://forms.gle/YBffD7Sx4nuRHJK37" target="_blank" rel="noopener">Claim Your Spot →</a>
+      <div class="microcopy">Takes about a minute. No spam, no nonsense — just a heads-up when we launch.</div>
     </div>
   </div>
 </section>
@@ -435,15 +426,5 @@
   </div>
 </footer>
 
-<script>
-  function handleSignup(e){
-    e.preventDefault();
-    var form = e.target;
-    var ok = document.getElementById('ok');
-    form.style.display = 'none';
-    ok.style.display = 'block';
-    return false;
-  }
-</script>
 </body>
 </html>
