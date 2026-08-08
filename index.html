@@ -183,8 +183,10 @@
   .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
   .card{background:var(--char-2);border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:transform .2s, border-color .2s}
   .card:hover{transform:translateY(-6px);border-color:rgba(232,83,31,.5)}
-  .card .art{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%, #2c2823, #1b1915);padding:26px}
+  .card .art{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%, #2c2823, #1b1915);padding:26px}
   .card .art svg{width:78%;height:78%}
+  .card .art.photo{padding:0}
+  .card .art.photo img{width:100%;height:100%;object-fit:cover;display:block}
   .card .meta{padding:18px 20px;border-top:1px solid var(--line)}
   .card .meta h3{font-family:'Bebas Neue';font-size:23px;letter-spacing:.03em;margin-bottom:6px}
   .card .meta p{font-size:13.5px;color:var(--steel);line-height:1.5}
@@ -332,7 +334,7 @@
     <div class="sec-head">
       <div class="eyebrow">First Drop · Preview</div>
       <h2 id="caps-h2">Four Ways To Cap It Off</h2>
-      <p>Our launch lineup spans four collections of hitch caps — so whether you tow to the trailhead or the tailgate, there's a plug with your name on it. Placeholder art for now; the real designs from the workshop drop in right here.</p>
+      <p>Our launch lineup spans four collections of hitch caps — so whether you tow to the trailhead or the tailgate, there's a plug with your name on it. Fresh off the workbench, mounted and ready to roll.</p>
     </div>
     <div class="cards">
       <div class="card">
@@ -344,7 +346,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="art"><svg viewBox="0 0 100 100" style="color:var(--cream)" role="img" aria-label="Old Glory collection — patriotic American hitch caps"><use href="#cap"/></svg></div>
+        <div class="art photo"><img src="media/cap-old-glory.jpg" alt="Old Glory shield hitch cap mounted on a black truck's receiver hitch" loading="lazy" width="900" height="675"></div>
         <div class="meta">
           <h3>Old Glory</h3>
           <p>Flags, eagles, and stars-and-stripes for a rig that flies the colors.</p>
@@ -352,7 +354,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="art"><svg viewBox="0 0 100 100" style="color:var(--blaze)" role="img" aria-label="The Punchline collection — funny novelty hitch caps"><use href="#cap"/></svg></div>
+        <div class="art photo"><img src="media/cap-punchline.jpg" alt="Cherries hitch cap mounted on a black truck's receiver hitch" loading="lazy" width="900" height="675"></div>
         <div class="meta">
           <h3>The Punchline</h3>
           <p>Puns and cheeky one-liners that live up to the Son of a Hitch name.</p>
@@ -360,7 +362,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="art"><svg viewBox="0 0 100 100" style="color:var(--steel)" role="img" aria-label="Heads-Up collection — useful safety hitch caps like baby on board"><use href="#cap"/></svg></div>
+        <div class="art photo"><img src="media/cap-heads-up.jpg" alt="Baby on Board hitch cap mounted on a black truck's receiver hitch" loading="lazy" width="900" height="675"></div>
         <div class="meta">
           <h3>Heads-Up</h3>
           <p>Useful by design — "Baby on Board," reflective, and wide-load warning caps.</p>
