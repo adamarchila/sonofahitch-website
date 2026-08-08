@@ -10,7 +10,7 @@ After the one-time setup below, publishing is just: edit → commit → push in 
 1. Open **GitHub Desktop** → **File → Add Local Repository** → choose this `sonofahitch-website` folder.
    (If it says the folder isn't a repository, click **"create a repository"** when prompted.)
 2. Give it a name like `sonofahitch-website`, then **Create Repository**.
-3. Click **Publish repository** (top right). You can keep it Private — GitHub Pages works with private repos.
+3. Click **Publish repository** (top right). **Uncheck "Keep this code private"** so the repo is Public — free GitHub Pages requires a public repo. (A marketing site's files are public once live anyway; just never commit passwords or API keys.)
 4. Make your first commit: enter a summary like "Initial site", click **Commit to main**, then **Push origin**.
 
 ## Step 2 — Turn on GitHub Pages
